@@ -1,0 +1,221 @@
+body{
+    height: 100%;
+    margin: 0;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+.nav{
+    background-color: #0F76BC;
+    height: 55px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav .ri-menu-fill{
+    display: none;
+    height: 10px;
+    width:10px;
+    color: rgb(255, 255, 255);
+    padding: 20px 20px;
+}
+
+.nav p{
+    font-size: 14px; 
+    color: white;
+    line-height: 40px;
+    padding: 0 10px;
+}
+
+.nav-bar-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    border-bottom: 0.9px solid #dcdbdb;
+}
+
+.nav-bar-2 img {
+    height: 80px;
+    width:140px;
+    margin: 0;
+    padding: 19px ;
+}
+
+.nav-bar-2 .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    padding: 10px 20px;
+    color: #656565;
+}
+
+a{
+    color:#0070a8;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+
+}
+
+.nav-bar-2 .right p .call{
+    color: #656565;
+}
+
+.part-3{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:10px;
+    margin: 0;
+    padding: 8px 15px;
+    font-size: 13px;
+}
+
+.part-3 .part-3-anchor{
+    display: flex;
+    align-items: center;
+    color:#689F59;
+}
+
+.part-3 i{
+    color:#689F59;
+}
+
+.part-3 .a{
+    color: #656565;
+}
+
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    flex-direction: column;
+}
+
+.login-container h1{
+    color:#689F59;
+    font-size: 28px;
+    padding: 10px 0px;
+    font-weight: 100;
+}
+
+.username{
+    display: flex;
+    gap: 10px;
+    
+}
+
+.username p{
+    font-size: 14px;
+    color: #656565;
+    
+}
+
+.username input{
+    border: 1px solid #ccc;
+    height: 32px;
+    width: 198.925px;
+    vertical-align: middle;
+    padding: 4px 6px;
+}
+
+.login-container .password {
+    padding: 20px;
+    margin-left: 1px;
+}
+
+.login-container .username input:focus{
+    border-color: #689F59;
+
+}
+
+.login-container .remember{
+    display: flex;
+    gap: 5px;
+    margin: 0;
+    padding: 0px 10px;
+    margin-left: -100px;
+}
+
+.login-container .remember p{
+    font-size: 12px;
+    color: #737373;
+}
+
+.login-container .login-button button{
+    background-color: #0e76bc;
+    border: 0;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 13px;
+    margin-top: 10px;
+}
+
+.login-container .login-button button:hover{
+ background-color: #333;
+ cursor: pointer;
+}
+
+.login-container .help a{
+    color: #689F59;
+    font-size: 13px;
+    line-height: 10px;
+    
+}
+
+.login-container .help{
+    margin: 0;
+    padding: 15px;
+}
+
+.login-container .cookies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top:-10px
+}
+
+.login-container .cookies p{
+    font-size: 12px;
+    color: #656565;
+}
+
+@media (max-width:844px) {
+    .nav{
+        height: 40px;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+
+    .nav .ri-menu-fill{
+        display: inline-block;
+        color: white;
+
+    }
+
+    .nav p{
+        align-items: flex-start;
+    }
+    .nav-bar-2{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .nav-bar-2 .right{
+        flex-wrap: wrap;
+        height: 50px;
+        margin-bottom: 120px;
+    }
+    
+    .nav-bar-2 .right p,.nav-bar-2 .right i,.nav-bar-2 .right a{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
